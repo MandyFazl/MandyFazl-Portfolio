@@ -42,15 +42,16 @@ body {
 
 #dropdownmenu {
     z-index: 2;
-    position:absolute;
+    position: absolute;
     right: 6rem;
-    top:4.5rem;
+    top: 4.5rem;
     display: none;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 21px;
 }
+
 .dropMenuitems a {
     text-decoration: none;
     color: #252525;
@@ -117,6 +118,7 @@ body {
 
 .footer {
     margin: 0 15%;
+    border-top: 1px solid #dee2e6 !important;
 }
 
 /*individual Project page*/
@@ -236,9 +238,31 @@ body {
 
 
 
-.bg-body-tertiary{
-    background-color: #E8F0FD;
+.bg-body-tertiary {
+    background-color: #E6FAF7;
+
 }
+
+.img-thum {
+    width: 100%;
+}
+
+.researchresult {
+    background-color: #E6FAF7;
+    padding: 3rem;
+    margin: 1rem;
+    font-size: x-large;
+}
+
+.painpoits {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    padding-top: 1.5rem;
+}
+
 
 /* Typography CSS */
 
@@ -309,9 +333,7 @@ p {
         display: none;
     }
 
-    .leftside {
-        display: none;
-    }
+
 
     .buttoncontainer {
         flex-direction: row;
@@ -350,6 +372,13 @@ p {
             "skills buttoncontainer2"
             "skills buttoncontainer3"
         ;
+
+    }
+
+    @media only screen and (max-width: 1000px) {
+        .BeforeRedesign {
+            gap: 1rem;
+        }
 
     }
 
