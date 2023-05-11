@@ -10,5 +10,10 @@ function hclose(){
     document.getElementById("dropdownmenu").style.display="none";
     document.getElementById("xmark").style.display="none";
     document.getElementById("Hambergermenu").style.display="block";
-}
+} 
+
+
+
+
+
 
