@@ -6,6 +6,10 @@ body {
 
 .header {
     width: 100%;
+    position: fixed;
+    background-color: white;
+    z-index: 2;
+    top:0;
 }
 #myBtn {
     display: none;
@@ -26,12 +30,9 @@ body {
     box-shadow: 0 12px 10px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.10);
   }
 .nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     margin: auto;
     width: 80%;
+    height:7rem;
 }
 
 .menu {
@@ -43,6 +44,26 @@ body {
     font-weight: 700;
     font-size: 21px;
     line-height: 25px;
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 1;
+    align-items: center;
+    height:7rem;
+    top:0;
+}
+#Hambergermenu{
+    z-index: 2;
+    right: 20%;
+    position: absolute;
+    right: 15%;
+    margin-top: 2rem;
+}
+#xmark{
+    z-index: 2;
+    right: 20%;
+    position: absolute;
+    right: 15%; 
+    margin-top: 2rem;   
 }
 
 .menu a {
@@ -89,6 +110,11 @@ body {
     display: flex;
     width: 20%;
     justify-content: flex-start;
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 2;
+    top:0;
+
 }
 
 .spin {
@@ -119,6 +145,7 @@ body {
     height: fit-content;
     padding-left: 5%;
     padding-right: 5%;
+    padding-top: 8rem;
 }
 
 .main a {
@@ -588,6 +615,28 @@ p {
         ;
 
     }
+    }
 
-
-}
+    @media only screen and (max-width: 900px) {
+        .AboutMe {
+            margin: 0 15% 25px 15%;
+            padding-top: 1rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: max-content;
+            gap: 10px;
+            grid-template-areas:
+            "aboutmecontent"
+            "aboutmeimg"
+            "education"
+            "experience"
+            "skills"
+            "skills"
+            "skills"
+            "buttoncontainer1"
+            "buttoncontainer2"
+            "buttoncontainer3"
+        ;
+            ;
+        }
+        }

@@ -41,7 +41,7 @@
   <!---->
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   <header class="header">
-    <div class="nav">
+    <div class="navigation">
       <div class="logo"><a href="index.html"><img src="images\image 5.png" alt="Mandy Fazl"></a></div>
       <div class="menu">
         <div class="Menuitems">
@@ -78,9 +78,54 @@
         Contact
       </div>
     </div>
+      <!--ScrollSpy-->
+      <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollproblem">Problem Statement</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">User Research</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#scrollReseach">Reseach</a></li>
+              <li><a class="dropdown-item" href="#scrollAffinity">Affinity Diagram</a></li>
+              <li><a class="dropdown-item" href="#scrollPersona">User Persona</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Ideate</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#scrollFeaturePrioritization">Feature Prioritization</a></li>
+              <li><a class="dropdown-item" href="#scrollUserFlow">User Flow</a></li>
+              <li><a class="dropdown-item" href="#scrollSiteMap">Site Map</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollWireframes">Wireframes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollUsabilityTest">Usability Test</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollStyleGuide">Style Guide</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollprototype">High-Fidelity Prototypes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollSummary">Summary</a>
+          </li>
+        </ul>
+      </nav>
+      
+<!--/ScrollSpy-->
   </header>
 
-  <div class="container py-4 mainbody">
+  <section class="main">
+  <div    
+  data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="container py-4 scrollspy-example p-3 rounded-2" tabindex="0">
+
+
     <!--introduction-->
     <div class="p-5 mb-4 bg-body-tertiary rounded-3">
       <div class="row">
@@ -98,7 +143,7 @@
     </div>
     <!--/introduction-->
     <!--problemstatement-->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" id="scrollproblem">
       <div class="col">
         <h2>Problem Statement</h2><br>
         <p>Users are unable to navigate swiftly through pages due to the clutter of information and images and UI
@@ -132,7 +177,7 @@
     </div>
     <!--/Before Redesign-->
     <!--Research-->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" id="scrollReseach">
       <h2>Research</h2><img src="images\GreenLine.png" class="leftside" alt="GreenLine">
       <br>
       <div class="row align-items-start text-center">
@@ -155,7 +200,7 @@
     </div>
     <!--/Research-->
     <!--Affinity Diagram-->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" id="scrollAffinity">
       <h2>Affinity Diagram main findings</h2><img src="images\GreenLine.png" class="leftside" alt="GreenLine">
       <br>
       <div class="row">
@@ -175,7 +220,7 @@
     </div>
     <!--/Affinity Diagram-->
     <!--User Persona-->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" id="scrollPersona">
       <h2>User Persona</h2><img src="images\GreenLine.png" class="leftside" alt="GreenLine">
       <br>
       <div class="row">
@@ -225,7 +270,7 @@
     </div>
     <!--User Persona-->
     <!--Feature Prioritization-->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" id="scrollFeaturePrioritization">
       <h2>Feature Prioritization</h2><img src="images\GreenLine.png" class="leftside" alt="GreenLine">
       <br>
       <div class="row">
@@ -244,7 +289,7 @@
     </div>
     <!--/Feature Prioritization-->
     <!--UserFlow-->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" id="scrollUserFlow">
       <h2>User Flow</h2><img src="images\GreenLine.png" class="leftside" alt="GreenLine">
       <br>
       <div class="row">
@@ -257,7 +302,7 @@
     </div>
     <!--/UserFlow-->
     <!--Site Map-->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" id="scrollSiteMap">
       <h2>Site Map</h2><img src="images\GreenLine.png" class="leftside" alt="GreenLine">
       <br>
       <div class="row">
@@ -267,7 +312,7 @@
     </div>
     <!--/Site Map-->
     <!--Wireframes-->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" id="scrollWireframes">
       <h2>Wireframes</h2><img src="images\GreenLine.png" class="leftside" alt="GreenLine">
       <br>
       <div class="row">
@@ -284,7 +329,7 @@
     </div>
     <!--/Wireframes-->
     <!--Usability Test-->
-    <div class="container-fluid py-5 ">
+    <div class="container-fluid py-5" id="scrollUsabilityTest">
       <h2>Usability Test</h2><img src="images\GreenLine.png" class="leftside" alt="GreenLine">
       <br>
       <div class="col" style="padding-top: 1.5rem;">
@@ -356,7 +401,7 @@
     <!--\UT4-->
     <!--/Usability Test-->
     <!--Style Guide-->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" id="scrollStyleGuide">
       <h2>Style Guide</h2><img src="images\GreenLine.png" class="leftside" alt="GreenLine">
       <div class="row">
         <div class="col-lg-6" style="padding-top:1.5rem">
@@ -388,8 +433,8 @@
     </div>
     <!--Style Guide-->
     <!--High-Fidelity-Prototypes-->
-    <div class="container-fluid py-5">
-      <h2>Style Guide</h2><img src="images\GreenLine.png" class="leftside" alt="GreenLine">
+    <div class="container-fluid py-5" id="scrollprototype">
+      <h2>High-Fidelity Prototypes</h2><img src="images\GreenLine.png" class="leftside" alt="GreenLine">
       <div class="row">
         <div class="col-lg-6 text-center automargin">
           <h3 style="padding-bottom: 1rem; padding-top: 1.5rem;">Home Page Design</h3>
@@ -437,7 +482,7 @@
       <!--/LINK-TO-THE-PROTOTYPE-->
       <!--SUMMERY-->
       <div class="p-5 mb-4 bg-body-tertiary rounded-3" style="margin-top: 3rem;">
-        <div class="container-fluid py-3">
+        <div class="container-fluid py-3" id="scrollSummary">
           <div class="row">
             <div class="col">
               <h1 class="display-5 fw-bold">Summary and Takeaways</h1>
@@ -461,6 +506,7 @@
         </div>
       </div>
       <!--/SUMMERY-->
+    </section>
 
       <footer class="footer">
         <div>
