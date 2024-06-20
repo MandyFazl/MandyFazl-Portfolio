@@ -290,6 +290,11 @@ body {
     background-color: #E6FAF7 !important;
 
 }
+.bg-body-tertiarycp {
+    background-color: #D9D9D9 !important;
+
+}
+
 
 .img-thum {
     width: 100%;
@@ -301,8 +306,19 @@ body {
     margin: 1rem;
     font-size: x-large;
 }
+.researchresultcp {
+    background-color: #D9D9D9;
+    padding: 3rem;
+    margin: 1rem;
+    font-size: x-large;
+}
 .BackgroundDesign {
     background-color: #E6FAF7;
+    padding: 3rem;
+    font-size: x-large;
+}
+.BackgroundDesigncp {
+    background-color: #D9D9D9;
     padding: 3rem;
     font-size: x-large;
 }
@@ -321,6 +337,11 @@ margin: auto;
 }
 .list-group-item{
     background-color:  #E6FAF7;
+    padding: 1.25rem;
+    border: none;
+}
+.list-group-itemcp{
+    background-color:  #D9D9D9;
     padding: 1.25rem;
     border: none;
 }
